@@ -1,0 +1,345 @@
+body {
+  position: relative;
+  background-image: url(../images/Background.png);
+  width: 1440px;
+  height: 1024px;
+}
+nav {
+  position: absolute;
+  width: 773px;
+  height: 96px;
+  left: 29px;
+  top: 24px;
+}
+
+#home {
+  position: absolute;
+  width: 77px;
+  height: 43px;
+  left: 185px;
+  top: 67px;
+
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 43px;
+
+  color: black;
+}
+
+#gallery {
+  position: absolute;
+  width: 92px;
+  height: 43px;
+  left: 343px;
+  top: 67px;
+
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 43px;
+
+  color: #000000;
+}
+
+#create {
+  position: absolute;
+  width: 83px;
+  height: 43px;
+  left: 517px;
+  top: 67px;
+
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 43px;
+
+  color: #000000;
+}
+#contact {
+  position: absolute;
+  width: 96px;
+  height: 43px;
+  left: 687px;
+  top: 67px;
+
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 43px;
+
+  color: #000000;
+}
+#logo {
+  position: absolute;
+  width: 89px;
+  height: 89px;
+  left: 29px;
+  top: 24px;
+  border-radius: 45px;
+}
+#woodType {
+  position: absolute;
+  color: white;
+  width: 134px;
+  height: 36px;
+  left: 356px;
+  top: 165px;
+
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 36px;
+}
+#walnut {
+  position: absolute;
+  background-image: url(../images/Walnut.jpg);
+  background-size: cover;
+  width: 130px;
+  height: 130px;
+  left: 201px;
+  top: 229px;
+  border-radius: 30px;
+}
+
+#hWalnut {
+  position: absolute;
+  width: 65px;
+  height: 29px;
+  left: 234px;
+  top: 350px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  color: #ffffff;
+}
+#koa {
+  position: absolute;
+  background-image: url(../images/Koa.jpg);
+  background-size: cover;
+  width: 130px;
+  height: 130px;
+  left: 356px;
+  top: 229px;
+  border-radius: 30px;
+}
+#hKoa {
+  position: absolute;
+  width: 36px;
+  height: 29px;
+  left: 405px;
+  top: 350px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  color: #ffffff;
+}
+#bubinga {
+  position: absolute;
+  background-image: url(../images/Bubinga.jpg);
+  background-size: cover;
+  width: 130px;
+  height: 130px;
+  left: 511px;
+  top: 229px;
+  border-radius: 30px;
+}
+#hBubinga {
+  position: absolute;
+  width: 78px;
+  height: 29px;
+  left: 537px;
+  top: 350px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  color: #ffffff;
+}
+#line {
+  position: absolute;
+  width: 527px;
+  height: 0px;
+  left: 156px;
+  top: 443px;
+  border: 1px solid rgba(227, 227, 227, 0.5);
+}
+
+#inlayType {
+  position: absolute;
+  color: white;
+  width: 56px;
+  height: 36px;
+  left: 392px;
+  top: 450px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 36px;
+}
+#opal {
+  position: absolute;
+  background-image: url(../images/Opal.jpg);
+  background-size: cover;
+  width: 130px;
+  height: 130px;
+  left: 201px;
+  top: 512px;
+  border-radius: 30px;
+}
+#hOpal {
+  position: absolute;
+  width: 45px;
+  height: 29px;
+  left: 244px;
+  top: 630px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  color: #ffffff;
+}
+
+#copper {
+  position: absolute;
+  background-image: url(../images/Copper.jpg);
+  background-size: cover;
+  width: 130px;
+  height: 130px;
+  left: 356px;
+  top: 512px;
+  border-radius: 30px;
+}
+#hCopper {
+  position: absolute;
+  width: 71px;
+  height: 29px;
+  left: 386px;
+  top: 630px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  color: #ffffff;
+}
+
+#flowers {
+  position: absolute;
+  background-image: url(../images/Flowers.jpg);
+  background-size: cover;
+  width: 130px;
+  height: 130px;
+  left: 511px;
+  top: 512px;
+  border-radius: 30px;
+}
+#hFlowers {
+  position: absolute;
+  width: 63px;
+  height: 29px;
+  left: 545px;
+  top: 630px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  color: #ffffff;
+}
+#line2 {
+  position: absolute;
+  width: 527px;
+  height: 0px;
+  left: 156px;
+  top: 722px;
+  border: 1px solid rgba(227, 227, 227, 0.5);
+}
+
+#finishType {
+  position: absolute;
+  color: white;
+  width: 68px;
+  height: 36px;
+  left: 387px;
+  top: 745px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 36px;
+}
+
+#matte {
+  position: absolute;
+  background-image: url(../images/Matte.png);
+  background-size: cover;
+  width: 130px;
+  height: 130px;
+  left: 277px;
+  top: 802px;
+  border-radius: 30px;
+}
+#hMatte {
+  position: absolute;
+  width: 53px;
+  height: 29px;
+  left: 316px;
+  top: 925px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  color: #ffffff;
+}
+
+#glossy {
+  position: absolute;
+  background-image: url(../images/Glossy.jpg);
+  background-size: cover;
+  width: 130px;
+  height: 130px;
+  left: 432px;
+  top: 802px;
+  border-radius: 30px;
+}
+#hGlossy {
+  position: absolute;
+  width: 52px;
+  height: 29px;
+  left: 471px;
+  top: 925px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  color: #ffffff;
+}
+#userRing {
+  position: absolute;
+  width: 565px;
+  height: 565px;
+  left: 747px;
+  top: 230px;
+}
+
+button {
+  cursor: pointer;
+}
+button:hover {
+  box-shadow: 0 0 25px teal;
+}

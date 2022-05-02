@@ -1,0 +1,140 @@
+body {
+  position: relative;
+  background-image: url(../images/Background.png);
+  width: 1440px;
+  height: 1024px;
+}
+nav {
+  position: absolute;
+  width: 773px;
+  height: 96px;
+  left: 29px;
+  top: 24px;
+}
+#shopName {
+  position: absolute;
+  width: 302px;
+  height: 72px;
+  left: 569px;
+  top: 150px;
+
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 72px;
+
+  color: #000000;
+}
+
+.about {
+  position: absolute;
+  width: 642px;
+  height: 751px;
+  left: 112px;
+  top: 288px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.family {
+  position: absolute;
+  width: 503px;
+  height: 581px;
+  left: 810px;
+  top: 276px;
+  background: url(IMG_2832.jpg);
+  border-radius: 30px;
+}
+#imgTitle {
+  position: absolute;
+  width: 218px;
+  height: 36px;
+  left: 952px;
+  top: 840px;
+
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20 px;
+  line-height: 36px;
+
+  color: #ffffff;
+}
+#home {
+  position: absolute;
+  width: 77px;
+  height: 43px;
+  left: 185px;
+  top: 67px;
+
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 43px;
+
+  color: black;
+}
+
+#gallery {
+  position: absolute;
+  width: 92px;
+  height: 43px;
+  left: 343px;
+  top: 67px;
+
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 43px;
+
+  color: #000000;
+}
+
+#create {
+  position: absolute;
+  width: 83px;
+  height: 43px;
+  left: 517px;
+  top: 67px;
+
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 43px;
+
+  color: #000000;
+}
+#contact {
+  position: absolute;
+  width: 96px;
+  height: 43px;
+  left: 687px;
+  top: 67px;
+
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 43px;
+
+  color: #000000;
+}
+#logo {
+  position: absolute;
+  width: 89px;
+  height: 89px;
+  left: 29px;
+  top: 24px;
+  border-radius: 45px;
+}
+button {
+  cursor: pointer;
+}

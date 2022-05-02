@@ -1,0 +1,116 @@
+body {
+  position: relative;
+  background-image: url(../images/Background.png);
+  width: 1440px;
+  height: 1024px;
+}
+nav {
+  position: absolute;
+  width: 773px;
+  height: 96px;
+  left: 29px;
+  top: 24px;
+}
+
+#home {
+  position: absolute;
+  width: 77px;
+  height: 43px;
+  left: 185px;
+  top: 67px;
+
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 43px;
+
+  color: black;
+}
+
+#gallery {
+  position: absolute;
+  width: 92px;
+  height: 43px;
+  left: 343px;
+  top: 67px;
+
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 43px;
+
+  color: #000000;
+}
+
+#create {
+  position: absolute;
+  width: 83px;
+  height: 43px;
+  left: 517px;
+  top: 67px;
+
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 43px;
+
+  color: #000000;
+}
+#contact {
+  position: absolute;
+  width: 96px;
+  height: 43px;
+  left: 687px;
+  top: 67px;
+
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 43px;
+
+  color: #000000;
+}
+#logo {
+  position: absolute;
+  width: 89px;
+  height: 89px;
+  left: 29px;
+  top: 24px;
+  border-radius: 45px;
+}
+#connect {
+  position: absolute;
+  width: 1305px;
+  height: 73px;
+  left: 78px;
+  top: 222px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 73px;
+  color: #ffffff;
+}
+
+#facebook {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 378px;
+  top: 362px;
+}
+
+#instagram {
+  position: absolute;
+  width: 290px;
+  height: 290px;
+  left: 773px;
+  top: 367px;
+}
+button {
+  cursor: pointer;
+}
