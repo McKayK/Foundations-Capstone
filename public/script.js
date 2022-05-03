@@ -13,6 +13,31 @@ let woodDisplayed = "";
 let inlayDisplayed = "";
 // let displayed = "";
 
+const userDisplayed = (image) => {
+  const oldImg = document.getElementById("userRing");
+  const oldDiv = document.getElementById("userSelection");
+
+  if (!!oldImg) {
+    oldImg.remove();
+    oldDiv.remove();
+  }
+
+  let userRing = document.createElement("div");
+  userRing.id = "userSelection";
+
+  let body = document.querySelector("body");
+  body.appendChild(userRing);
+
+  let newDiv = document.getElementById("userSelection");
+
+  const img = document.createElement("img");
+  img.id = "userRing";
+  img.setAttribute("src", `../images/${image}.png`);
+  newDiv.appendChild(img);
+  // newDiv.innerHTML = img;
+  // console.log(img.src);
+};
+
 //display
 // const displayTest = () => {};
 
@@ -77,55 +102,15 @@ for (let i = 0; i < finishBtn.length; i++) {
 //walnut
 walnut.addEventListener("click", (event) => {
   event.preventDefault();
-  const oldImg = document.getElementById("userRing");
-  const oldDiv = document.getElementById("userSelection");
 
-  if (!!oldImg) {
-    oldImg.remove();
-    oldDiv.remove();
-  }
-
-  let userRing = document.createElement("div");
-  userRing.id = "userSelection";
-
-  let body = document.querySelector("body");
-  body.appendChild(userRing);
-
-  let newDiv = document.getElementById("userSelection");
-
-  const img = document.createElement("img");
-  img.id = "userRing";
-  img.setAttribute("src", "../images/WalnutRing.png");
-  newDiv.appendChild(img);
-  // newDiv.innerHTML = img;
-  // console.log(img.src);
+  userDisplayed(woodDisplayed + inlayDisplayed);
 });
 
 //koa
 koa.addEventListener("click", (event) => {
   event.preventDefault();
 
-  const oldImg = document.getElementById("userRing");
-  const oldDiv = document.getElementById("userSelection");
-
-  if (!!oldImg) {
-    oldImg.remove();
-    oldDiv.remove();
-  }
-
-  let userRing = document.createElement("div");
-  userRing.id = "userSelection";
-
-  let body = document.querySelector("body");
-  body.appendChild(userRing);
-
-  let newDiv = document.getElementById("userSelection");
-
-  const img = document.createElement("img");
-  img.id = "userRing";
-  img.setAttribute("src", "../images/KoaRing.png");
-  // console.log(img.src);
-  newDiv.appendChild(img);
+  userDisplayed(woodDisplayed + inlayDisplayed);
 });
 
 //bubinga
@@ -158,27 +143,11 @@ bubinga.addEventListener("click", (event) => {
 //opal
 opal.addEventListener("click", (event) => {
   event.preventDefault();
-  const oldImg = document.getElementById("userRing");
-  const oldDiv = document.getElementById("userSelection");
-
-  if (!!oldImg) {
-    oldImg.remove();
-    oldDiv.remove();
+  if (woodDisplayed < 1) {
+    alert("Must select a wood first");
+  } else {
+    userDisplayed(woodDisplayed + inlayDisplayed);
   }
-
-  let userRing = document.createElement("div");
-  userRing.id = "userSelection";
-
-  let body = document.querySelector("body");
-  body.appendChild(userRing);
-
-  let newDiv = document.getElementById("userSelection");
-
-  const img = document.createElement("img");
-  img.id = "userRing";
-  img.setAttribute("src", "../images/WalnutwOpal.png");
-  // console.log(img.src);
-  newDiv.appendChild(img);
 });
 
 //copper
