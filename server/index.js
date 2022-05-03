@@ -1,9 +1,9 @@
 const express = require("express");
 const cors = require("cors");
 const path = require("path");
-const process = require("dotenv");
+// const process = require("dotenv");
 
-require("dotenv").config();
+// require("dotenv").config();
 
 const app = express();
 app.use(cors());
@@ -18,4 +18,4 @@ app.get("/", (req, res) => {
 
 const port = process.env.PORT || 4003;
 
-app.listen(port, () => console.log("Running on port 4003"));
+app.listen(port, () => console.log(`Running on port ${port}`));
