@@ -14,6 +14,6 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/home.html"));
 });
 
-const PORT = process.env.PORT;
+const port = process.env.PORT;
 
-app.listen(PORT, () => console.log("Running on port 4003"));
+app.listen(port, () => console.log("Running on port 4003"));
