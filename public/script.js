@@ -245,7 +245,7 @@ submitRingBtn.addEventListener("click", (event) => {
       notes: notes.value,
     };
 
-    axios.post("momentring.com/api/neworder", newOrder).then(() => {
+    axios.post("http://momentring.com/api/neworder", newOrder).then(() => {
       window.location.href = "/home.html";
     });
   });
