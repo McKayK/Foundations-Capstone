@@ -246,7 +246,7 @@ submitRingBtn.addEventListener("click", (event) => {
     };
 
     axios
-      .post("http://shop.momentrings.com/api/neworder", newOrder)
+      .post("http://momentrings.herokuapp.com/api/neworder", newOrder)
       .then(() => {
         window.location.href = "/home.html";
       });
