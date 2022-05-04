@@ -11,7 +11,7 @@ const inlayBtn = document.querySelectorAll(".inlayBtn");
 const finishBtn = document.querySelectorAll(".finishBtn");
 let woodDisplayed = "";
 let inlayDisplayed = "";
-// let displayed = "";
+// let finishDisplayed = "";
 
 const userDisplayed = (image) => {
   const oldImg = document.getElementById("userRing");
@@ -90,7 +90,14 @@ for (let i = 0; i < inlayBtn.length; i++) {
 //finish
 for (let i = 0; i < finishBtn.length; i++) {
   finishBtn[i].addEventListener("click", () => {
+    finishDisplayed = "";
     finishBtn[i].classList.add("clicked");
+
+    // if (finishBtn[i].classList.contains("clicked")) {
+    //   finishDisplayed += finishBtn[i].id;
+    //   console.log(finishDisplayed);
+    // }
+
     for (let x = 0; x < finishBtn.length; x++) {
       if (finishBtn[x] !== finishBtn[i]) {
         finishBtn[x].classList.remove("clicked");
@@ -117,32 +124,13 @@ koa.addEventListener("click", (event) => {
 bubinga.addEventListener("click", (event) => {
   event.preventDefault();
 
-  const oldImg = document.getElementById("userRing");
-  const oldDiv = document.getElementById("userSelection");
-
-  if (!!oldImg) {
-    oldImg.remove();
-    oldDiv.remove();
-  }
-
-  let userRing = document.createElement("div");
-  userRing.id = "userSelection";
-
-  let body = document.querySelector("body");
-  body.appendChild(userRing);
-
-  let newDiv = document.getElementById("userSelection");
-
-  const img = document.createElement("img");
-  img.id = "userRing";
-  img.setAttribute("src", "../images/BubingaRing.png");
-  // console.log(img.src);
-  newDiv.appendChild(img);
+  userDisplayed(woodDisplayed + inlayDisplayed);
 });
 
 //opal
 opal.addEventListener("click", (event) => {
   event.preventDefault();
+
   if (woodDisplayed < 1) {
     alert("Must select a wood first");
   } else {
@@ -153,26 +141,21 @@ opal.addEventListener("click", (event) => {
 //copper
 copper.addEventListener("click", (event) => {
   event.preventDefault();
-  const oldImg = document.getElementById("userRing");
-  const oldDiv = document.getElementById("userSelection");
 
-  if (!!oldImg) {
-    oldImg.remove();
-    oldDiv.remove();
+  if (woodDisplayed < 1) {
+    alert("Must select a wood first");
+  } else {
+    userDisplayed(woodDisplayed + inlayDisplayed);
   }
-
-  let userRing = document.createElement("div");
-  userRing.id = "userSelection";
-
-  let body = document.querySelector("body");
-  body.appendChild(userRing);
-
-  let newDiv = document.getElementById("userSelection");
-
-  const img = document.createElement("img");
-  img.id = "userRing";
-  img.setAttribute("src", "../images/WalnutwCopper.png");
-  // console.log(img.src);
-  newDiv.appendChild(img);
 });
-// if(woodBtn.classList === 'clicked')
+
+//flowers
+flowers.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  if (woodDisplayed < 1) {
+    alert("Must select a wood first");
+  } else {
+    userDisplayed(woodDisplayed + inlayDisplayed);
+  }
+});
