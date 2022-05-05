@@ -30,7 +30,7 @@ module.exports = {
       .query(
         `
             INSERT INTO orders (first_name, last_name, address, apartment, city, state, ring_size, notes, customization)
-            VALUES ('${firstName}', '${lastName}', '${address}', '${apartment}', '${city}', '${state}', '${ringSize}', '${notes}', ${customization})
+            VALUES ('${firstName}', '${lastName}', '${address}', '${apartment}', '${city}', '${state}', '${ringSize}', '${notes}', '${customization}');
         `
       )
       .then(() => {
