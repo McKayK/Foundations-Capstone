@@ -14,7 +14,7 @@ const finishBtn = document.querySelectorAll(".finishBtn");
 const submitRingBtn = document.querySelector("#submitRing");
 let woodDisplayed = "";
 let inlayDisplayed = "";
-// let finishDisplayed = "";
+let finishDisplayed = "";
 
 const userDisplayed = (image) => {
   const oldImg = document.getElementById("userRing");
@@ -96,10 +96,10 @@ for (let i = 0; i < finishBtn.length; i++) {
     finishDisplayed = "";
     finishBtn[i].classList.add("clicked");
 
-    // if (finishBtn[i].classList.contains("clicked")) {
-    //   finishDisplayed += finishBtn[i].id;
-    //   console.log(finishDisplayed);
-    // }
+    if (finishBtn[i].classList.contains("clicked")) {
+      finishDisplayed += finishBtn[i].id;
+      console.log(finishDisplayed);
+    }
 
     for (let x = 0; x < finishBtn.length; x++) {
       if (finishBtn[x] !== finishBtn[i]) {
@@ -113,21 +113,21 @@ for (let i = 0; i < finishBtn.length; i++) {
 walnut.addEventListener("click", (event) => {
   event.preventDefault();
 
-  userDisplayed(woodDisplayed + inlayDisplayed);
+  userDisplayed(woodDisplayed + inlayDisplayed + finishDisplayed);
 });
 
 //koa
 koa.addEventListener("click", (event) => {
   event.preventDefault();
 
-  userDisplayed(woodDisplayed + inlayDisplayed);
+  userDisplayed(woodDisplayed + inlayDisplayed + finishDisplayed);
 });
 
 //bubinga
 bubinga.addEventListener("click", (event) => {
   event.preventDefault();
 
-  userDisplayed(woodDisplayed + inlayDisplayed);
+  userDisplayed(woodDisplayed + inlayDisplayed + finishDisplayed);
 });
 
 //opal
@@ -137,7 +137,7 @@ opal.addEventListener("click", (event) => {
   if (woodDisplayed < 1) {
     alert("Must select a wood first");
   } else {
-    userDisplayed(woodDisplayed + inlayDisplayed);
+    userDisplayed(woodDisplayed + inlayDisplayed + finishDisplayed);
   }
 });
 
@@ -148,7 +148,7 @@ copper.addEventListener("click", (event) => {
   if (woodDisplayed < 1) {
     alert("Must select a wood first");
   } else {
-    userDisplayed(woodDisplayed + inlayDisplayed);
+    userDisplayed(woodDisplayed + inlayDisplayed + finishDisplayed);
   }
 });
 
@@ -159,7 +159,7 @@ flowers.addEventListener("click", (event) => {
   if (woodDisplayed < 1) {
     alert("Must select a wood first");
   } else {
-    userDisplayed(woodDisplayed + inlayDisplayed);
+    userDisplayed(woodDisplayed + inlayDisplayed + finishDisplayed);
   }
 });
 
