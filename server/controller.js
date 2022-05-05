@@ -24,16 +24,17 @@ module.exports = {
       state,
       ringSize,
       notes,
+      customization,
     } = req.body;
     sequelize
       .query(
         `
-            INSERT INTO orders (first_name, last_name, address, apartment, city, state, ring_size, notes)
-            VALUES ('${firstName}', '${lastName}', '${address}', '${apartment}', '${city}', '${state}', '${ringSize}', '${notes}')
+            INSERT INTO orders (first_name, last_name, address, apartment, city, state, ring_size, notes, customization)
+            VALUES ('${firstName}', '${lastName}', '${address}', '${apartment}', '${city}', '${state}', '${ringSize}', '${notes}', ${customization})
         `
       )
       .then(() => {
-        let data = `To=+18012097907&From=+13853311320&Body=${firstName}\n${lastName}\n${address}\n${apartment}\n${city}\n${state}\n${ringSize}\n${notes}`;
+        let data = `To=+18013106181&From=+13853311320&Body=${firstName}\n${lastName}\n${address}\n${apartment}\n${city}\n${state}\n${ringSize}\n${notes}\n${customization}`;
 
         let configuration = {
           headers: {
