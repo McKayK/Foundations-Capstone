@@ -174,7 +174,7 @@ submitRingBtn.addEventListener("click", (event) => {
 
   body.appendChild(submitDiv);
 
-  section.style.filter = "blur(4px)";
+  // section.style.filter = "blur(4px)";
   // nav.style.filter = "blur(4px)";
   // button.style.filter = "blur(4px)";
 
@@ -183,6 +183,7 @@ submitRingBtn.addEventListener("click", (event) => {
   const submitForm = document.createElement("form");
   submitForm.id = "form";
   submitForm.innerHTML = `
+  <button id='remove'>X</button>
   <label for="firstName">First Name</label>
   <input class='formStyle' type="text" name="firstName" id="firstName" required/><br />
   <label for="lastName">Last Name</label>
@@ -199,8 +200,8 @@ submitRingBtn.addEventListener("click", (event) => {
   <select class='formStyle' id="ringSize" name="ringSize" required><br />
   <option value="5">5</option>
   <option value="5.5">5.5</option>
-    <option value="6">6</option>
-    <option value="6.5">6.5</option>
+  <option value="6">6</option>
+  <option value="6.5">6.5</option>
     <option value="7">7</option>
     <option value="7.5">7.5</option>
     <option value="8">8</option>
@@ -212,15 +213,23 @@ submitRingBtn.addEventListener("click", (event) => {
     <option value="11">11</option>
     <option value="11.5">11.5</option>
     <option value="12">12</option>
-  </select><br />
-  <label for="notes">Notes</label>
-  <input class='formStyle' type="text" name="notes" id="notes" /><br />
-  <button type='submit' id='formSubmitButton'>Submit</button>
-  `;
+    </select><br />
+    <label for="notes">Notes</label>
+    <input class='formStyle' type="text" name="notes" id="notes" /><br />
+    <button type='submit' id='formSubmitButton'>Submit</button>
+    `;
+
   newSubDiv.appendChild(submitForm);
   newSubDiv.style.filter = "none";
   // const newSubmit = document.querySelector("#formSubmitButton");
   // console.log(newSubmit);
+
+  // body.addEventListener("click", () => {
+  //   if (!!submitForm) {
+  //     submitForm.innerHTML = "";
+  //   }
+  // });
+
   submitForm.addEventListener("submit", (event) => {
     event.preventDefault();
 
@@ -233,7 +242,7 @@ submitRingBtn.addEventListener("click", (event) => {
     const ringSize = document.querySelector("#ringSize");
     const notes = document.querySelector("#notes");
 
-    console.log(firstName);
+    // console.log(firstName);
     const newOrder = {
       firstName: firstName.value,
       lastName: lastName.value,
@@ -251,5 +260,11 @@ submitRingBtn.addEventListener("click", (event) => {
       .then(() => {
         window.location.href = "/home.html";
       });
+  });
+
+  const remove = document.getElementById("remove");
+  // console.log(remove);
+  remove.addEventListener("click", () => {
+    submitDiv.remove();
   });
 });

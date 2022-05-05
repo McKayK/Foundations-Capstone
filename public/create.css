@@ -363,6 +363,7 @@ nav {
 }
 
 #submitForm {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -381,6 +382,7 @@ nav {
 
 #form {
   display: flex;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   flex-direction: column;
   justify-content: space-evenly;
   z-index: 5;
@@ -389,10 +391,22 @@ nav {
 #formSubmitButton {
   background-color: rgba(6, 167, 124, 0.329);
   align-self: center;
+  font-weight: 1000;
   width: 135px;
   height: 70px;
   border-radius: 30px;
   z-index: 5;
+}
+
+#remove {
+  position: absolute;
+  background-color: rgba(6, 167, 124, 0.329);
+  font-weight: 1000;
+  top: 20px;
+  right: 20px;
+  height: 30px;
+  width: 30px;
+  border-radius: 30px;
 }
 
 /* .formStyle {
