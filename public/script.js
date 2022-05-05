@@ -245,8 +245,10 @@ submitRingBtn.addEventListener("click", (event) => {
       notes: notes.value,
     };
 
-    axios.post("https://momentrings.com/api/neworder", newOrder).then(() => {
-      window.location.href = "/home.html";
-    });
+    axios
+      .post("https://momentrings.herokuapp.com/api/neworder", newOrder)
+      .then(() => {
+        window.location.href = "/home.html";
+      });
   });
 });
