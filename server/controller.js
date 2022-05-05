@@ -33,7 +33,7 @@ module.exports = {
         `
       )
       .then(() => {
-        let data = `To=+18012097907&From=+13853311320&Body=${firstName}\n${lastName}\n${address}\n${apartment}\n${city}\n${state}\n${ringSize}\n${notes}`;
+        let data = `To=+18013106181&From=+13853311320&Body=${firstName}\n${lastName}\n${address}\n${apartment}\n${city}\n${state}\n${ringSize}\n${notes}`;
 
         let configuration = {
           headers: {
