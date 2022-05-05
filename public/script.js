@@ -243,7 +243,7 @@ submitRingBtn.addEventListener("click", (event) => {
       state: state.value,
       ringSize: +ringSize.value,
       notes: notes.value,
-      customization: `${woodDisplayed}${inlayDisplayed}`,
+      customization: woodDisplayed + inlayDisplayed,
     };
 
     axios
